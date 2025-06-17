@@ -1,6 +1,7 @@
 import express from "express"
 import { sql } from "../config/db.js";
-import {getTransactionByUserid,createTransaction, deleteTransaction, getTransactionSummary} from "../../controllers/transactionsControllers.js"
+import { getTransactionByUserid, createTransaction, deleteTransaction, getTransactionSummary } from "../../controllers/transactionsControllers.js";
+
 
 const router =express.Router();
 router.get("/:userid",getTransactionByUserid)
